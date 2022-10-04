@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Jogo da Forca</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital@1&family=Silkscreen&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+    <body>
+        <header>            
+            <div class="caixa">
+                    <h1><img src="img/logo_a_alura20.png"></h1>
+            </div>
+             <h2 class="titulo"> Challenge 2 Oracle ONE - Crie seu próprio jogo da forca</h2>
+        </header>
+           
+
+            <div class="tela-inicial" id="tela-inicio">
+                <button id="inicia-jogo" class="inicia-jogo-btn">JOGAR</button>
+                <button id="adiciona-palavra" class="add-palavra-btn">Adicionar nova palavra</button>
+            </div>
+
+        
+        <section class="input-section hide" id="secao-input">
+            <input type="text" id="add-palavra" class="input-add-palavra" placeholder="  Digite uma palavra:">
+                <div class="aviso">
+                    <img class="aviso-img" src="img/atencao.jpg" alt="símbolo de um ponto de exclamação">
+                    <p class="aviso-p"> Digite uma palavra: (sem acento e máx. 8 letras)</p>
+                </div>
+
+                <div class="botoes">
+                    <button id="salvar-palavra" class="botoes-esquerda">Salvar a  palavra</button>
+                    <button id="salva-e-inicia" class="btn-salva-inicia">Jogar</button>
+                    <button id="cancela-btn" class="botoes-direita">Cancelar</button>
+                </div>
+        </section> 
+
+
+
+        <main  class="main-jogo hide" id="main-id">
+            <canvas width="1200" height="480" id="forca"></canvas>      
+                
+                    <div class="botoes-main">
+                        <button id="novo-jogo-btn" class="botao-jogar">Jogar</button>
+                        <button id="desistir-btn" class="botao-sair">Sair</button>
+                   </div>
+        </main>
+            <footer id="footer">
+                <h3>&copy; Sebastião Antonio Campos - Set/2022</h3>
+                    <div>
+                        <a href="https://github.com/seubastian/" target="_blank"><i class="fa-brands fa-github fa-fw"></i></a>
+                    </div>
+            </footer>
+                <script src="./javaScript/script.js"></script>
+                <script src="./javaScript/botoes.js"></script>
+                <script src="./javaScript/canvas.js"></script>
+                <script src="./javaScript/derrota-vitoria.js"></script>
+    </body>
+</html>
